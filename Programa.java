@@ -1,13 +1,16 @@
-
+//instanciando a classe Programa
 public class Programa {
 
 	//inicializando o Programa
 	public static void main(String[] args) {
+
 		//criando espaço para o objeto
 		Filme f = new Filme(); 
-		//atribuindo valores para o objeto 
+		//atribuindo valores para o objeto setCodigo
 		f.setCodigo(123);
+		//atribuindo valores para o objeto setNome
 		f.setNome("A Era do Gelo");
+		//atribuindo valores para o objeto setValor
 		f.setValor(2.50);
 
 		//chamando função de devolver filme
@@ -22,7 +25,7 @@ public class Programa {
 		//chamando função que mostra informações do filme
 		f.mostra();
 		
-		//n faço idéa
+		//Proteção: desviando para os blocos catch correspondentes
 		try {
 			f.retirar();
 		} catch (RuntimeException e) {
